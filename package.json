@@ -1,0 +1,25 @@
+{
+  "name": "elm-ssr-exploration",
+  "version": "0.0.1",
+  "description": "A basic exploration on how to do SSR in a simple way",
+  "main": "index.html",
+  "scripts": {
+    "build": "private/elm make src/Main.elm --output=dist/app.untouched.js && npm run fiddle",
+    "fiddle": "node js/fiddle.js dist/app.untouched.js dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfeineis/elm-ssr-exploration.git"
+  },
+  "keywords": [
+    "Elm",
+    "SSR"
+  ],
+  "author": "Martin Feineis",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/mfeineis/elm-ssr-exploration/issues"
+  },
+  "homepage": "https://github.com/mfeineis/elm-ssr-exploration#readme"
+}
